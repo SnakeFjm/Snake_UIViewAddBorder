@@ -12,6 +12,9 @@
 		F62251EC1FB97742002063D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62251EA1FB97742002063D0 /* Main.storyboard */; };
 		F62251EE1FB97742002063D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62251ED1FB97742002063D0 /* Assets.xcassets */; };
 		F62251F11FB97742002063D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62251EF1FB97742002063D0 /* LaunchScreen.storyboard */; };
+		F62252021FB977FF002063D0 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F62251FB1FB977FF002063D0 /* NSLayoutConstraint+PureLayout.m */; };
+		F62252031FB977FF002063D0 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F62251FE1FB977FF002063D0 /* ALView+PureLayout.m */; };
+		F62252041FB977FF002063D0 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F62252011FB977FF002063D0 /* NSArray+PureLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,15 @@
 		F62251ED1FB97742002063D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F62251F01FB97742002063D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F62251F21FB97742002063D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F62251F91FB977FF002063D0 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		F62251FA1FB977FF002063D0 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		F62251FB1FB977FF002063D0 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		F62251FC1FB977FF002063D0 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		F62251FD1FB977FF002063D0 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		F62251FE1FB977FF002063D0 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		F62251FF1FB977FF002063D0 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		F62252001FB977FF002063D0 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		F62252011FB977FF002063D0 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		F62251E51FB97742002063D0 /* UIView加指定边框 */ = {
 			isa = PBXGroup;
 			children = (
+				F62251F81FB977FF002063D0 /* PureLayout */,
 				F62251E61FB97742002063D0 /* AppDelegate.swift */,
 				F62251E81FB97742002063D0 /* ViewController.swift */,
 				F62251EA1FB97742002063D0 /* Main.storyboard */,
@@ -62,6 +75,22 @@
 				F62251F21FB97742002063D0 /* Info.plist */,
 			);
 			path = "UIView加指定边框";
+			sourceTree = "<group>";
+		};
+		F62251F81FB977FF002063D0 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F62251F91FB977FF002063D0 /* PureLayoutDefines.h */,
+				F62251FA1FB977FF002063D0 /* ALView+PureLayout.h */,
+				F62251FB1FB977FF002063D0 /* NSLayoutConstraint+PureLayout.m */,
+				F62251FC1FB977FF002063D0 /* NSArray+PureLayout.h */,
+				F62251FD1FB977FF002063D0 /* NSLayoutConstraint+PureLayout.h */,
+				F62251FE1FB977FF002063D0 /* ALView+PureLayout.m */,
+				F62251FF1FB977FF002063D0 /* PureLayout+Internal.h */,
+				F62252001FB977FF002063D0 /* PureLayout.h */,
+				F62252011FB977FF002063D0 /* NSArray+PureLayout.m */,
+			);
+			path = PureLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +167,9 @@
 			files = (
 				F62251E91FB97742002063D0 /* ViewController.swift in Sources */,
 				F62251E71FB97742002063D0 /* AppDelegate.swift in Sources */,
+				F62252021FB977FF002063D0 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				F62252031FB977FF002063D0 /* ALView+PureLayout.m in Sources */,
+				F62252041FB977FF002063D0 /* NSArray+PureLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
