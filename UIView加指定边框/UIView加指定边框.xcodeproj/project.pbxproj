@@ -15,6 +15,7 @@
 		F62252021FB977FF002063D0 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F62251FB1FB977FF002063D0 /* NSLayoutConstraint+PureLayout.m */; };
 		F62252031FB977FF002063D0 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F62251FE1FB977FF002063D0 /* ALView+PureLayout.m */; };
 		F62252041FB977FF002063D0 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F62252011FB977FF002063D0 /* NSArray+PureLayout.m */; };
+		F622520F1FB97B6E002063D0 /* UIView_Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622520E1FB97B6E002063D0 /* UIView_Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		F62251FF1FB977FF002063D0 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
 		F62252001FB977FF002063D0 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
 		F62252011FB977FF002063D0 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		F622520D1FB97A02002063D0 /* Snake-UIViewAddBorder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Snake-UIViewAddBorder-Bridging-Header.h"; sourceTree = "<group>"; };
+		F622520E1FB97B6E002063D0 /* UIView_Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Border.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +69,10 @@
 		F62251E51FB97742002063D0 /* UIView加指定边框 */ = {
 			isa = PBXGroup;
 			children = (
+				F622520D1FB97A02002063D0 /* Snake-UIViewAddBorder-Bridging-Header.h */,
 				F62251F81FB977FF002063D0 /* PureLayout */,
 				F62251E61FB97742002063D0 /* AppDelegate.swift */,
+				F622520E1FB97B6E002063D0 /* UIView_Border.swift */,
 				F62251E81FB97742002063D0 /* ViewController.swift */,
 				F62251EA1FB97742002063D0 /* Main.storyboard */,
 				F62251ED1FB97742002063D0 /* Assets.xcassets */,
@@ -165,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F622520F1FB97B6E002063D0 /* UIView_Border.swift in Sources */,
 				F62251E91FB97742002063D0 /* ViewController.swift in Sources */,
 				F62251E71FB97742002063D0 /* AppDelegate.swift in Sources */,
 				F62252021FB977FF002063D0 /* NSLayoutConstraint+PureLayout.m in Sources */,
@@ -311,6 +317,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "snake.UIView-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIView加指定边框/Snake-UIViewAddBorder-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,6 +332,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "snake.UIView-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIView加指定边框/Snake-UIViewAddBorder-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
